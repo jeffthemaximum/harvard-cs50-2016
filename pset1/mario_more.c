@@ -43,10 +43,10 @@ void space(int n) {
 }
 
 int get_height(void) {
-    printf("Height: ");
     int height;
     do {
+        printf("Height: ");
         height = get_int();
-    } while (height < 0 && height > 23);
+    } while (height < 0 || height > 23);
     return height;
 }
