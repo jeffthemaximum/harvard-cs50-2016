@@ -8,6 +8,8 @@ bool cc_len_validator(long long num);
 int main(void){
     long long cc_num = get_cc_num();
     printf("%lli", cc_num);
+    
+    
 }
 
 long long get_cc_num(void) {
@@ -27,4 +29,10 @@ bool cc_len_validator(long long num) {
     } else {
         return true;
     }
+}
+
+int get_digit_from_end(int num, int position) {
+    int modulator = pow(10, position);
+    int partial_last = (num % modulator) ;
+    return partial_last / (modulator / 10);
 }
