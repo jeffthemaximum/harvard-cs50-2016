@@ -22,9 +22,14 @@ int main(int argc, string argv[])
     // get string
     string input = GetString();
     
-    input = rot_string(input, k);
+    // casar rotate input by k
+    string output = rot_string(input, k);
     
-    printf("%s\n", input);
+    // print output
+    printf("%s\n", output);
+    
+    // success
+    return 0;
 }
 
 string rot_string(string input, int k)
